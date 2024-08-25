@@ -127,4 +127,42 @@ grafana/dashboards/grafana-linux-node-exporter.json
 grafana/dashboards/grafan-node-exporter.json
 ```
 
+## ✅ `Kubetail` - a Live log Viewer Web Interface for Kubernestes
+Kubetail providing an easy-to-use, web-based interface that allows you to view all the logs for a set of Kubernetes workloads (e.g. Deployment, CronJob, StatefulSet) simultaneously, in real-time. Under the hood, it uses your cluster's Kubernetes API to monitor your workloads and detect when a new workload container gets created or an old one deleted.
+
+- **Key features**
+    - Small and resource efficient (<30MB of memory, negligible CPU)
+    - View log messages in real-time
+    - View logs that are part of a specific workload (e.g. Deployment, CronJob, StatefulSet)
+    - Detects creation and deletion of workload containers and adds their logs to the viewing stream automatically
+    - Uses your Kubernetes API so log messages never leave your possession (private by default)
+    - Filter logs based on time
+    - Filter logs based on node properties such as availability zone, CPU architecture or node ID
+    - Color-coded log lines to distinguish between different containers
+    - A clean, easy-to-use interface
+
+- **Install**
+
+```
+kubectl create ns kubetail
+kubectl apply -f manifests/kubetail/kubetail-clusterauth.yaml
+
+```
+
+- **Access on Browser**
+
+```
+https://<loadBalancer_ip>
+
+```
+
+- **Demo**
+
+```
+https://www.kubetail.com/demo
+
+```
+
+- **Reference**
+https://github.com/kubetail-org/kubetail
 

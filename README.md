@@ -91,7 +91,7 @@ kubectl apply --server-side -f manifests/custom-resource-defination-setup
 kubectl wait --for condition=Established --all CustomResourceDefinition --namespace=monitoring
 
 # For Infrastructure kubernetes monitoring 
-kubectl apply -f manifests/infrastructure-monitoring-setup/
+kubectl apply -f manifests/k8s-workload-monitoring-setup/
 
 # For kubernetes pods containers logs monitoring
 kubectl apply -f manifests/logs-monitoring-setup/
@@ -99,7 +99,7 @@ kubectl apply -f manifests/logs-monitoring-setup/
 
 ```shell
 # To delete the complete stack from server
-kubectl delete --ignore-not-found=true -f manifests/logs-monitoring-setup/ manifests/infrastructure-monitoring-setup/ -f manifests/custom-resource-defination-setup
+kubectl delete --ignore-not-found=true -f manifests/logs-monitoring-setup/ manifests/k8s-workload-monitoring-setup/ -f manifests/custom-resource-defination-setup
 ```
 
 ```shell
@@ -121,10 +121,6 @@ kubectl get cm -n monitoring
 # for loki logs explorer dashboards please import the `grafana-k8s-loki.json` file 
 grafana/dashboards/grafana-k8s-loki.json
 
-# for other infrastructure dashboards except default dashboards please imports from here
-grafana/dashboards/grafana-blackbox.json
-grafana/dashboards/grafana-linux-node-exporter.json
-grafana/dashboards/grafan-node-exporter.json
 ```
 
 ## ✅ `Kubetail` - a Live log Viewer Web Interface for Kubernestes

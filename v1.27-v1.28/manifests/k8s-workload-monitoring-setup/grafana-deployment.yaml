@@ -112,9 +112,6 @@ spec:
         - mountPath: /grafana-dashboard-definitions/0/namespace-by-workload
           name: grafana-dashboard-namespace-by-workload
           readOnly: false
-        - mountPath: /grafana-dashboard-definitions/0/nodes
-          name: grafana-dashboard-nodes
-          readOnly: false
         - mountPath: /grafana-dashboard-definitions/0/pod-total
           name: grafana-dashboard-pod-total
           readOnly: false
@@ -191,9 +188,6 @@ spec:
       - configMap:
           name: grafana-dashboard-namespace-by-workload
         name: grafana-dashboard-namespace-by-workload
-      - configMap:
-          name: grafana-dashboard-nodes
-        name: grafana-dashboard-nodes
       - configMap:
           name: grafana-dashboard-pod-total
         name: grafana-dashboard-pod-total

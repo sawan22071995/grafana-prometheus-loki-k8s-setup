@@ -14,6 +14,19 @@
 
 - It is designed to monitor modern, dynamic environments and provides a powerful query language for retrieving and analyzing data.
 
+
+#### 📌 Node Exporter
+
+- Node Exporter is an open-source tool designed for monitoring the hardware and operating system metrics of a Linux host. 
+
+- It collects and exposes a wide range of system-level metrics, such as CPU usage, memory utilization, disk I/O, and network statistics, in a format that Prometheus can scrape and store. 
+
+#### 📌 Blackbox Exporter
+
+- Blackbox Exporter is an open-source tool used to monitor the availability and performance of networked services by performing black-box probing. 
+
+- It supports a variety of probe types, including HTTP, HTTPS, TCP, and ICMP (ping), to test the responsiveness and correctness of services from an external perspective. 
+
 #### 📌Loki
 
 - Loki is a horizontally scalable, highly available log aggregation system inspired by Prometheus. 

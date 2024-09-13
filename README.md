@@ -33,6 +33,32 @@
 
 - It is designed to handle large volumes of logs and provides efficient log querying and analysis capabilities.
 
+- Filter Logs in Loki Dashboard by `Search Query` search box
+
+    - **Filter Logs in Loki Dashbords logs with specific string format**
+
+    ```bash
+
+    string1
+
+    ```
+
+    - **Filter Loki Dashbords logs with multiple key:value pair in json format**
+
+    ```bash
+
+    json|key1=value1,key2=value2,key3=value3
+
+    ```
+
+    - **Filter Loki Dashbords logs with multiple key=value pair**
+
+    ```bash
+
+    key1=value1,key2=value2,key3=value3
+
+    ```
+
 #### 📌Promtail
 
 - Promtail is an agent that ships logs from various sources (e.g., files, Docker containers, Kubernetes pods) to Loki. 
